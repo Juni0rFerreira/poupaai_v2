@@ -10,8 +10,7 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
               begin: Alignment.topCenter,
@@ -19,7 +18,6 @@ class _SplashPageState extends State<SplashPage> {
               colors: [Color(0xFF00A9FF), Color(0xFF89CFF3)]),
         ),
         child: const Text('PoupaAí'),
-      ),
-    );
+      );
   }
 }
