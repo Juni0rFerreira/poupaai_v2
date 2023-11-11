@@ -1,0 +1,11 @@
+Controller = Bloc.
+
+MVVM = Model View ViewModel.
+
+DataSource > Repository > Entity > Model.
+
+ImplementsRepository.
+
+Presentation > Bloc(Bloc, State, Event) > Widget.
+
+Tudo isso é isso
