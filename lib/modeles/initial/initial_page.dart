@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:poupaai_v2/common/widgets_global/primary_button_custom.dart';
+import 'package:poupaai_v2/common/widgets_global/text_custom.dart';
 
 class InitialPage extends StatefulWidget {
   const InitialPage({super.key});
@@ -11,70 +13,53 @@ class _InitialPageState extends State<InitialPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFCDF5FD),
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(28.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset('assets/img/initial.png'),
-              const SizedBox(height: 20,),
-              const Text(
-                'Gaste De Forma Mais Inteligente Economize Mais',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 36,
-                  fontWeight: FontWeight.w700,
-                  color: Color(0xFF00A9FF),
-                ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Expanded(
+              flex: 1,
+              child: Container(
+                color: const Color(0xFFCDF5FD),
+                child: Image.asset('assets/img/initial.png'),
               ),
-              const SizedBox(
-                height: 20,
-              ),
-              Container(
-                alignment: Alignment.center,
-                height: 64,
-                width: 358,
-                decoration: const BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(40),
-                  ),
-                ),
-                child: const Text(
-                  'Iniciar',
-                  style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white),
-                ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+            ),
+            const Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Column(
                 children: [
-                  Text(
-                    'Já Tem Conta?',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black,
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 0, horizontal: 30),
+                    child: Text(
+                      'Gaste De Forma Mais Inteligente Economize Mais',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 36,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF00A9FF),
+                      ),
                     ),
                   ),
-                  Text(
-                    ' Entrar',
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                      color: Color(0xFF00A9FF),
-                    ),
+                  SizedBox(
+                    height: 15.5,
+                  ),
+                  PrimaryButtonCustom(
+                    text: 'Iniciar',
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  TextCustom(
+                    textOne: 'Já Tem Uma Conta?',
+                    textTwo: ' Entrar',
+                  ),
+                  SizedBox(
+                    height: 30,
                   ),
                 ],
-              )
-            ],
-          ),
+              ),
+            )
+          ],
         ),
       ),
     );

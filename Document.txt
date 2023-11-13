@@ -9,3 +9,8 @@ ImplementsRepository.
 Presentation > Bloc(Bloc, State, Event) > Widget.
 
 Tudo isso é isso
+
+Splash > Front (x) / Back ()
+Initial > Front (x) / Back ()
+CreateAccount > Front () / Back ()
+Login > Front () / Back ()
