@@ -22,7 +22,7 @@ Loginpage > Front (x) / Back ()
 
 HomeView > Front (x) / Back ()
 {
-    HomePage > Front () / Back ()
+    HomePage > Front (x) / Back ()
     WalletPage > Front () / Back ()
     StaticPage > Front () / Back ()
     ProfilePage > Front () / Back ()
