@@ -10,7 +10,20 @@ Presentation > Bloc(Bloc, State, Event) > Widget.
 
 Tudo isso é isso
 
-Splash > Front (x) / Back ()
-Initial > Front (x) / Back ()
-CreateAccount > Front () / Back ()
-Login > Front () / Back ()
+Screens
+
+Splashpage > Front (x) / Back ()
+
+InitialPage > Front (x) / Back ()
+
+CreateAccountPage > Front (x) / Back ()
+
+Loginpage > Front (x) / Back ()
+
+HomeView > Front (x) / Back ()
+{
+    HomePage > Front () / Back ()
+    WalletPage > Front () / Back ()
+    StaticPage > Front () / Back ()
+    ProfilePage > Front () / Back ()
+}
