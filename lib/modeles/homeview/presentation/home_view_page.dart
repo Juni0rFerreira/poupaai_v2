@@ -5,6 +5,7 @@ import 'package:poupaai_v2/modeles/home/presentation/home_page.dart';
 import 'package:poupaai_v2/modeles/homeview/presentation/widgets/custom_bottomappbar.dart';
 import 'package:poupaai_v2/modeles/profile/presentation/profiler_page.dart';
 import 'package:poupaai_v2/modeles/stats/presentation/stats_page.dart';
+import 'package:poupaai_v2/modeles/transactions/presentation/transactions_page.dart';
 import 'package:poupaai_v2/modeles/wallet/presentation/wallet_page.dart';
 
 class HomeViewPage extends StatefulWidget {
@@ -13,6 +14,8 @@ class HomeViewPage extends StatefulWidget {
   @override
   State<HomeViewPage> createState() => _HomeViewPageState();
 }
+
+
 
 class _HomeViewPageState extends State<HomeViewPage> {
   final pageController = PageController();
@@ -38,13 +41,20 @@ class _HomeViewPageState extends State<HomeViewPage> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color(0xFF00A9FF),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const TransactionsPage(),
+            ),
+          );
+        },
+        backgroundColor: const Color(0xFF429690),
         child: const Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: CustomBottomAppBar(
-        selectedItemColor: const Color(0xFF00A9FF),
+        selectedItemColor: const Color(0xFF429690),
         children: [
           CustomBottomAppBarItem(
             label: 'home',

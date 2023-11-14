@@ -24,7 +24,7 @@ class TextFormFieldCustom extends StatefulWidget {
 class _TextFormFieldCustomState extends State<TextFormFieldCustom> {
   final defaultBorder = const OutlineInputBorder(
     borderSide: BorderSide(
-      color: Color(0xFF00A9FF),
+      color: Color(0xFF429690),
     ),
   );
 

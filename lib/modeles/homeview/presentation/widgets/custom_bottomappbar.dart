@@ -19,7 +19,6 @@ class _CustomBottomAppBarState extends State<CustomBottomAppBar> {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      color: const Color(0xFFCDF5FD),
       shape: const CircularNotchedRectangle(),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,

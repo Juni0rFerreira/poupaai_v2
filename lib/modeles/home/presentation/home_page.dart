@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:poupaai_v2/common/widgets_global/app_header.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,83 +16,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(
-            left: 0,
-            right: 0,
-            child: Container(
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Color(0xFF89CFF3),
-                    Color(0xFF00A9FF),
-                  ],
-                ),
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.elliptical(500, 30),
-                  bottomRight: Radius.elliptical(500, 30),
-                ),
-              ),
-              height: 287,
-            ),
-          ),
-          Positioned(
-            left: 24.0,
-            right: 24.0,
-            top: 74.0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Good Afternoon,',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500),
-                    ),
-                    Text(
-                      'Enjelin Morgeana',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 28,
-                          fontWeight: FontWeight.w600),
-                    ),
-                  ],
-                ),
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-                  decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(4),
-                    ),
-                    color: Colors.white.withOpacity(0.06),
-                  ),
-                  child: Stack(
-                    alignment: const AlignmentDirectional(0.5, -0.5),
-                    children: [
-                      const Icon(
-                        Icons.notifications_none_outlined,
-                        color: Colors.white,
-                      ),
-                      Container(
-                        width: 8,
-                        height: 8,
-                        decoration: BoxDecoration(
-                          color: Colors.orange,
-                          borderRadius: BorderRadius.circular(4.0),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
+          const AppHeader(),
           Positioned(
             right: 24,
             left: 24,

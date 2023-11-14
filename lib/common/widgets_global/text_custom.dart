@@ -32,7 +32,7 @@ class TextCustom extends StatelessWidget {
             style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w400,
-              color: Color(0xFF00A9FF),
+              color: Color(0xFF429690),
             ),
           ),
         ),

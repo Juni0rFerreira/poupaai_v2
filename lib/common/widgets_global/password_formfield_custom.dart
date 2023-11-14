@@ -27,7 +27,7 @@ class PasswordFormFieldCustom extends StatefulWidget {
 class _PasswordFormFieldCustomState extends State<PasswordFormFieldCustom> {
   final defaultBorder = const OutlineInputBorder(
     borderSide: BorderSide(
-      color: Color(0xFF00A9FF),
+      color: Color(0xFF429690),
     ),
   );
 
@@ -57,7 +57,7 @@ class _PasswordFormFieldCustomState extends State<PasswordFormFieldCustom> {
               },
               child: Icon(isHidden ? Icons.visibility_off
                  : Icons.visibility
-              , color: const Color(0xFF00A9FF),),
+              , color: const Color(0xFF429690),),
             ),
             hintText: widget.hintText,
             floatingLabelBehavior: FloatingLabelBehavior.always,

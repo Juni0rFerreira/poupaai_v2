@@ -26,8 +26,8 @@ class PrimaryButtonCustom extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color(0xFF89CFF3),
-                Color(0xFF00A9FF),
+                Color(0xFF429690),
+                    Color(0xFF2A7C76),
               ],
             ),
             borderRadius: BorderRadius.all(
